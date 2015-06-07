@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="UniversalGalleryDemo.Views.MainView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UniversalGalleryDemo.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:UniversalGalleryDemo.Controls"
+    xmlns:viewModels="using:UniversalGalleryDemo.ViewModels"
+    mc:Ignorable="d">
+    <Page.DataContext>
+        <!-- Main view model is instantiated directly in view. -->
+        <viewModels:MainViewModel />
+    </Page.DataContext>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Dark">
+        <!-- This support switching from old image to new image when new image is completely loaded -->
+        <controls:SwitchImage CurrentImage="{Binding CurrentImageUrl}" />
+        
+        <!-- This can be used as alternative however no image will be visible while new image is loading. This lag is noticeable on Raspberry Pi 2 -->
+        <!--<Image Source="{Binding CurrentImageUrl}" />-->
+    </Grid>
+</Page>

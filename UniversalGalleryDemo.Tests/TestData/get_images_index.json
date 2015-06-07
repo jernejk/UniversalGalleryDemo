@@ -1,0 +1,26 @@
+﻿{
+  "data": [
+    { "favorited": false, "id": "33695", "width": "1920", "height": "1200", "views": "117", "colors": " 999999 000000 333333 999966 666666 666633 CCCC99 CCCCCC 996666 663333", "favorites": "3" },
+    { "favorited": false, "id": "15163", "width": "1920", "height": "1200", "views": "109", "colors": " 330033 663366 000033 9933CC 333333 000000 333366 330099 330066 CC66CC", "favorites": "5" },
+    { "favorited": false, "id": "37176", "width": "1920", "height": "1080", "views": "85", "colors": " 330000 000000 333333 333300 663333 993300 663300 CC6633 99CC99 993333", "favorites": "2" },
+    { "favorited": false, "id": "33312", "width": "1600", "height": "1200", "views": "25", "colors": " 666666 333333 666633 996666 999999 663333 999966 6699CC 9999CC 333300", "favorites": "0" },
+    { "favorited": false, "id": "14768", "width": "1680", "height": "1050", "views": "54", "colors": " 000000 333366 333333 003333 336666 666699 669999 FFFFFF 000033 99CCCC", "favorites": "3" },
+    { "favorited": false, "id": "40037", "width": "1280", "height": "1024", "views": "14", "colors": " 003333 333333 000033 336666 669999 333366 666699 6699CC 9999CC 666666", "favorites": "0" },
+    { "favorited": false, "id": "29843", "width": "1920", "height": "1200", "views": "65", "colors": " 000000 003333 333333 000033 336666 333366 669999 CCFFFF FFFFFF 666699", "favorites": "2" },
+    { "favorited": false, "id": "16064", "width": "2560", "height": "1600", "views": "61", "colors": " 330033 663366 000033 333366 996699 993399 000000 663399 CC99CC CC66CC", "favorites": "2" },
+    { "favorited": false, "id": "7465", "width": "1440", "height": "900", "views": "21", "colors": " 000000 330000 333333 666666 999999 CCCCCC 663333 333300 666633 660000", "favorites": "1" },
+    { "favorited": false, "id": "5597", "width": "1920", "height": "1200", "views": "64", "colors": " FFFFFF 000000 CCCCCC 333333 666666 999999", "favorites": "2" },
+    { "favorited": false, "id": "32313", "width": "1920", "height": "1200", "views": "124", "colors": " 000000 000033 000066 FFFFFF 333366 000099 333399 330099 330066 333333", "favorites": "4" },
+    { "favorited": false, "id": "6832", "width": "1920", "height": "1200", "views": "19", "colors": " 000000 333333 003333 000033 003366 333366 663333 333300 336666 996633", "favorites": "0" },
+    { "favorited": false, "id": "7061", "width": "1680", "height": "1050", "views": "62", "colors": " 000000 330000 333333 660000 666666 990000 CC0000 999999 FF3333 FF9999", "favorites": "2" },
+    { "favorited": false, "id": "16267", "width": "1920", "height": "1200", "views": "85", "colors": " 333333 666666 000000 669966 999999 999966 336633 666633 333300 003300", "favorites": "1" },
+    { "favorited": false, "id": "88183", "width": "1600", "height": "1200", "views": "16", "colors": " 999999 996633 666633 663300 999966 333300 CC9966 CCCCCC 9999CC 663333", "favorites": "2" },
+    { "favorited": false, "id": "22498", "width": "1920", "height": "1200", "views": "59", "colors": " FFFFFF CCCCFF 6699CC CCFFFF 99CCFF 336699 9999CC CCCCCC 3399CC 99CCCC", "favorites": "1" }
+  ],
+  "sql": "\nSELECT DISTINCT SQL_CALC_FOUND_ROWS w.id, w.views, w.colors, w.favorites, w.width, w.height \nFROM wallpapers w WHERE (w.verify IN (2)) \n\tGROUP BY w.id ORDER BY RAND() LIMIT 16\n\t",
+  "shown": 16,
+  "time": "0.066914",
+  "total": "8256",
+  "alt_total": 0 
+
+}

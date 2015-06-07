@@ -1,0 +1,257 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" dir="ltr">
+<head>
+    <title>
+        Walldash | Computer Wallpapers
+    </title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="Title" content="Walldash | Computer Wallpapers">
+    <meta name="Author" content="Connor Smith">
+    <meta name="Description" content="Walldash provides free access to a collection of premium desktop wallpapers.">
+    <meta name="Keywords" content="free wallpapers, wallpaper background, desktop wallpaper, wallpaper for pc, wallpapers for free, hd wallpaper, wallpaper, background, computer, monitor, desktop, wall, walldash, walldash.net, walldash.com">
+    <meta name="Identifier" content="http://walldash.net">
+    <meta name="organization-email" content="walldash.net@gmail.com">
+
+
+    <link rel="icon" type="image/png" href="http://walldash.net/favicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="http://walldash.net/inc/css/style.css" rel="stylesheet" type="text/css" />
+
+
+    <script type="text/javascript" src="http://walldash.net/inc/js/jquery.1.5.min.js"></script>
+    <script type="text/javascript" src="http://walldash.net/inc/js/jquery.ba-hashchange.min.js"></script>
+    <script type="text/javascript" src="http://walldash.net/inc/js/jquery-ui-1.8.13.custom.min.js"></script>
+
+    <script type="text/javascript" src="http://walldash.net/inc/js/head.php.js"></script>
+
+
+    <script type='text/javascript' src='http://walldash.net/inc/js/generic.js'></script>
+    <script type='text/javascript' src='http://walldash.net/inc/js/index.php.js'></script>
+    <script type='text/javascript' src='http://walldash.net/inc/js/jscolor/jscolor.js'></script>
+
+</head>
+
+
+<body>
+
+
+    <script type="text/javascript">
+	var all = {
+			vars: {
+				'base_url' : "http://walldash.net/",
+				'current_url' : "http://walldash.net",
+
+				'debug' : "",
+
+				'backend' : '/backend',
+				'css' : '/inc/css',
+				'js' : '/inc/js',
+				'ui' : '/inc/ui',
+				'inc_php' : '/inc/php',
+
+				'username' : "jernej5",
+				'password' : "c72fed3f71210221da2f995c5131c843",
+				'requested_user' : "",
+				'identifier' : "jernej5",
+				'is_user' : "1",
+				'owner' : "",
+
+				'imgs_to_show' : 16,
+				'imgs_shown' : 0,
+				'padding' : 300,
+				'total' : 0,
+				'lock' : true,
+				'no_more' : false,
+
+				'window_width' : $(window).width(),
+				'resolution' : screen.width + " x " + screen.height
+			},
+
+			lang: {
+				'select_color' : 'click to select color'
+			}
+		}
+
+		if (!window.$$) { window.$$ = all; }
+    </script>
+
+
+    <noscript>
+        <style type="text/css">
+            #content {
+                display: block;
+                background-color: #444 !important;
+                background-image: url('inc/ui/StripeTile.png') !important;
+                background-attachment: fixed !important;
+            }
+        </style>
+    </noscript>
+
+    <div id='content'>
+        <div id="favorite_bar"><div class='folder_droppable' data-folder='Default'>Default</div><div class='folder_droppable' data-folder='Cute'>Cute</div><div class='folder_droppable' data-folder='new_folder'>New Folder</div></div>
+        <div id="top_bar"></div>
+
+
+        <div id="login_popup" class="popup_block">
+            <h4>Login</h4>
+            <form name="login_form" action="">
+                <p>Username:</p>
+                <input type="text" name="username" /><br />
+                <p>Password:</p>
+                <input type="password" name="password" /><br />
+                <p><input class="login_button" type="submit" value="Submit" /></p>
+            </form>
+
+            <div id="output_login">
+            </div>
+        </div>
+
+        <div id="register_popup" class="popup_block">
+            <h4>Register</h4>
+            <form name="registration_form" action="">
+                <p>Username:</p>
+                <input type="text" name="username" /><br />
+                <p>Password:</p>
+                <input type="password" name="password" /><br />
+                <p>Email:</p>
+                <input type="text" name="email" /><br />
+                <p><input class="register_button" type="submit" value="Submit" /></p>
+            </form>
+
+            <div id="output_register">
+            </div>
+        </div>
+
+        <div id="contact_popup" class="popup_block">
+            <h4>Contact Me</h4>
+
+            <div id="contact_info">
+                If you would like to contact me for any reason, please send an email to: <p>walldash.net@gmail.com</p>
+            </div>
+        </div>
+
+
+        <div id="user_stuff">
+            Konnichiwa <a href='http://walldash.net/jernej5/#/'>jernej5</a>!&nbsp;&nbsp;&nbsp;			<a href="http://walldash.net">Home Page</a> |
+            <a href="http://walldash.net/jernej5/#/">Favorites</a> |
+            <a href="http://walldash.net/backend/user_section/logout/logout.php">Logout</a>
+        </div>
+
+        <span id="main_logo" class="logo"><img src="http://walldash.net/inc/ui/Logo1.png" alt="Walldash Logo" /></span>
+
+        <div id="top_div">
+            <div id="alert"></div>
+
+            <div id="header">
+
+                <img src="inc/ui/Bar.png" id="search_options_bar" />
+
+                <div id="search_options_container">
+                    <div id="search_tags">
+                        <input type="text" id="search_tags_input" placeholder="enter search terms...">
+                    </div>
+                    <div id="search_color">
+                        <input id="search_color_input" class="color {adjust:false}" onchange="this.style.backgroundColor = '#' + this.color" value=" ">
+                        <a data-control="reset_color" href="#" class="small" style="position:relative; left:4px; top:-56px; display:none;" id="color_reset_link">reset</a>
+                    </div>
+                    <dl id="search_resolution" class="dropdown">
+                        <dt><span>all</span></dt>
+                        <dd>
+                            <ul>
+                                <li data-code="all"><a href="#">all</a></li>
+                                <li data-code="1024x768"><a href="#">1024 x 768</a></li>
+                                <li data-code="1280x960"><a href="#">1280 x 960</a></li>
+                                <li data-code="1280x1024"><a href="#">1280 x 1024</a></li>
+                                <li data-code="1280x800"><a href="#">1280 x 800</a></li>
+                                <li data-code="1366x768"><a href="#">1366 x 768</a></li>
+                                <li data-code="1440x900"><a href="#">1440 x 900</a></li>
+                                <li data-code="1600x900"><a href="#">1600 x 900</a></li>
+                                <li data-code="1600x1200"><a href="#">1600 x 1200</a></li>
+                                <li data-code="1680x1050"><a href="#">1680 x 1050</a></li>
+                                <li data-code="1920x1080"><a href="#">1920 x 1080</a></li>
+                                <li data-code="1920x1200"><a href="#">1920 x 1200</a></li>
+                                <li data-code="2560x1600"><a href="#">2560 x 1600</a></li>
+                            </ul>
+                            <ul>
+                                <li class="selected" data-code="l"><a href="#">+ all larger</a></li>
+                                <li data-code="r"><a href="#">+ same ratio</a></li>
+                                <li data-code="e"><a href="#">only this size</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl id="search_sort" class="dropdown">
+                        <dt><span>random</span></dt>
+                        <dd>
+                            <ul>
+                                <li class="selected" data-code="r"><a href="#">random</a></li>
+                                <li data-code="c"><a href="#">chrono</a></li>
+                                <li data-code="v"><a href="#">views</a></li>
+                                <li data-code="f"><a href="#">favorites</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl id="search_settings" class="dropdown">
+                        <dt></dt>
+                        <dd>
+                            <ul>
+                                <li>include:</li>
+                                <li>safe</li>
+                                <span class="filter_option checked_yes" name="sfw"></span>
+                                <li>nsfw</li>
+                                <span class="filter_option checked_no" name="nsfw"></span>
+                                <li>sketchy</li>
+                                <span class="filter_option checked_no" name="sketchy"></span>
+                            </ul>
+                        </dd>
+                    </dl>
+
+                    <div id="search_refresh" data-control="get_images">
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div id="container">
+            <div id="thumbs">
+                <noscript><h2>I apologize, this site requires Javascript.</h2></noscript>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+
+
+    $(function() {
+        WDHead.init();
+        Generic.init();
+        WDIndex.init();
+
+        if ($$.vars.is_user) {
+	        Generic.make_draggable();
+	        Generic.make_droppable();
+	    }
+    });
+
+        </script>
+
+        <!--<div id="side_logo">
+            <a href="http://walldash.net"><img src="" style="width:90px;"></a>
+        </div>-->
+        <!--
+        <div id="social">
+            <span class="social_button" style="margin-right:10px">
+                <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+                <fb:like width="55x" show_faces="false" layout="box_count" href="http://www.facebook.com/pages/Walldash/162418273805189" class=" fb_edge_widget_with_comment fb_iframe_widget"></fb:like>
+            </span>
+        </div>
+        -->
+
+
+</body>
+</html>

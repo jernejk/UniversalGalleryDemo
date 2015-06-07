@@ -1,0 +1,35 @@
+﻿<br />
+<b>Warning</b>:  fopen(logs/7991034147-213.157.236.119.txt): failed to open stream: File exists in <b>/home1/sathoro/public_html/walldash.net/backend/main_page/get_images.php</b> on line <b>193</b><br />
+<br />
+<b>Warning</b>:  fwrite() expects parameter 1 to be resource, boolean given in <b>/home1/sathoro/public_html/walldash.net/backend/main_page/get_images.php</b> on line <b>224</b><br />
+<br />
+<b>Warning</b>:  fwrite() expects parameter 1 to be resource, boolean given in <b>/home1/sathoro/public_html/walldash.net/backend/main_page/get_images.php</b> on line <b>224</b><br />
+<br />
+<b>Warning</b>:  fwrite() expects parameter 1 to be resource, boolean given in <b>/home1/sathoro/public_html/walldash.net/backend/main_page/get_images.php</b> on line <b>224</b><br />
+<br />
+<b>Warning</b>:  fwrite() expects parameter 1 to be resource, boolean given in <b>/home1/sathoro/public_html/walldash.net/backend/main_page/get_images.php</b> on line <b>224</b><br />
+<br />
+<b>Warning</b>:  fwrite() expects parameter 1 to be resource, boolean given in <b>/home1/sathoro/public_html/walldash.net/backend/main_page/get_images.php</b> on line <b>224</b><br />
+<br />
+<b>Warning</b>:  fwrite() expects parameter 1 to be resource, boolean given in <b>/home1/sathoro/public_html/walldash.net/backend/main_page/get_images.php</b> on line <b>224</b><br />
+<br />
+<b>Warning</b>:  fwrite() expects parameter 1 to be resource, boolean given in <b>/home1/sathoro/public_html/walldash.net/backend/main_page/get_images.php</b> on line <b>224</b><br />
+<br />
+<b>Warning</b>:  fwrite() expects parameter 1 to be resource, boolean given in <b>/home1/sathoro/public_html/walldash.net/backend/main_page/get_images.php</b> on line <b>224</b><br />
+<br />
+<b>Warning</b>:  fwrite() expects parameter 1 to be resource, boolean given in <b>/home1/sathoro/public_html/walldash.net/backend/main_page/get_images.php</b> on line <b>224</b><br />
+<br />
+<b>Warning</b>:  fwrite() expects parameter 1 to be resource, boolean given in <b>/home1/sathoro/public_html/walldash.net/backend/main_page/get_images.php</b> on line <b>224</b><br />
+<br />
+<b>Warning</b>:  fwrite() expects parameter 1 to be resource, boolean given in <b>/home1/sathoro/public_html/walldash.net/backend/main_page/get_images.php</b> on line <b>224</b><br />
+<br />
+<b>Warning</b>:  fwrite() expects parameter 1 to be resource, boolean given in <b>/home1/sathoro/public_html/walldash.net/backend/main_page/get_images.php</b> on line <b>224</b><br />
+<br />
+<b>Warning</b>:  fwrite() expects parameter 1 to be resource, boolean given in <b>/home1/sathoro/public_html/walldash.net/backend/main_page/get_images.php</b> on line <b>224</b><br />
+<br />
+<b>Warning</b>:  fwrite() expects parameter 1 to be resource, boolean given in <b>/home1/sathoro/public_html/walldash.net/backend/main_page/get_images.php</b> on line <b>224</b><br />
+<br />
+<b>Warning</b>:  fwrite() expects parameter 1 to be resource, boolean given in <b>/home1/sathoro/public_html/walldash.net/backend/main_page/get_images.php</b> on line <b>224</b><br />
+<br />
+<b>Warning</b>:  fwrite() expects parameter 1 to be resource, boolean given in <b>/home1/sathoro/public_html/walldash.net/backend/main_page/get_images.php</b> on line <b>224</b><br />
+{"data":[{"favorited":false,"id":"6366","width":"1680","height":"1050","views":"68","colors":" FFFFFF CCCCFF 9999CC CCCCCC 000033 CCFFFF 003333 669999 6699CC 99CCCC","favorites":"1"},{"favorited":false,"id":"13913","width":"1920","height":"1200","views":"146","colors":" FFFFFF FFFFCC CCCCCC 663300 333300 FFCCCC CCCC99 000000 993300 996633","favorites":"2"},{"favorited":false,"id":"99961","width":"1440","height":"900","views":"34","colors":" 000000 FFFFFF 333333 663333 CCFFFF 336666 336699 CC9999 CC9966 996633","favorites":"2"},{"favorited":false,"id":"99627","width":"1280","height":"1024","views":"28","colors":" 003366 003333 333366 333333 336666 006666 666666 996666 CC9966 663366","favorites":"0"},{"favorited":false,"id":"14119","width":"1600","height":"1200","views":"39","colors":" 333333 666633 996666 663333 CC9966 FFCC99 666666 996633 999966 FF9966","favorites":"1"},{"favorited":false,"id":"32878","width":"1440","height":"900","views":"10","colors":" 003333 333333 FFCC66 FF6600 000000 333300 663333 FFCC33 FFCC00 CCCC33","favorites":"1"},{"favorited":false,"id":"5845","width":"1280","height":"800","views":"17","colors":" FFFFFF 000000 FF0000 333333 330000 CC0000 CCCCCC FF3333 990000 660000","favorites":"1"},{"favorited":false,"id":"18438","width":"1920","height":"1200","views":"43","colors":" 333333 000000 666666 999999 CCCCCC FFFFFF","favorites":"1"},{"favorited":false,"id":"2118","width":"1920","height":"1080","views":"131","colors":" CCCCFF 99CCFF 000000 CCFFFF 3399FF 333333 6699CC 666666 9999CC 66CCFF","favorites":"3"},{"favorited":false,"id":"16114","width":"1280","height":"800","views":"15","colors":" CC0033 000000 333333 FFFFFF CC3333 990000 666666 999999 CC0000 330000","favorites":"0"},{"favorited":false,"id":"16665","width":"1920","height":"1080","views":"78","colors":" FFFFFF 333333 000000 CCCCCC 663333 999999 666666 996666 CC9999 FFCCCC","favorites":"1"},{"favorited":false,"id":"1029","width":"1600","height":"1200","views":"159","colors":" FFFFFF CCCCCC 003366 3366CC 6699CC 3399CC 336699 6699FF 003399 CCCCFF","favorites":"1"},{"favorited":false,"id":"4523","width":"1280","height":"800","views":"28","colors":" CCCCCC FFFFFF 000000 669966 CCFFFF 999966 CCCC99 330000 336666 333300","favorites":"0"},{"favorited":false,"id":"29405","width":"1680","height":"1050","views":"28","colors":" FFFFFF CCCCCC 333333 FFFFCC CCCC99 666666 FFCCCC 999999 000000 999966","favorites":"1"},{"favorited":false,"id":"21742","width":"1600","height":"1200","views":"12","colors":" 000000 003333 000033 003366 CCFFFF 006666 0099CC 006699 009999 99CCFF","favorites":"1"},{"favorited":false,"id":"288","width":"1280","height":"960","views":"20","colors":" 000000 333333 666666 333300 330000 666633 CC9966 003333 003300 999999","favorites":"1"}],"sql":"\nSELECT DISTINCT SQL_CALC_FOUND_ROWS w.id, w.views, w.colors, w.favorites, w.width, w.height \nFROM wallpapers w WHERE (w.verify IN (2)) \n\tGROUP BY w.id ORDER BY RAND() LIMIT 16\n\t","shown":16,"time":"0.085334","total":"8256","alt_total":0}
