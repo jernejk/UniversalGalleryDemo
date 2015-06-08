@@ -12,6 +12,7 @@ This is what app currently supports:
 
 Possible future features:
 - HTTP server for remote controlling slideshow (no mouse and keyboard required on the device)
+  - branch server_demo contains a naive implementation of an server on IoT device
 - Animations (when I managed to figure out how to do that with 30+ fps)
 - Mouse/touch/gamepad interactions
 - Multiple sources
