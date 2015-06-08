@@ -76,8 +76,10 @@ namespace UniversalGalleryDemo.Tests
         {
             WallDashProvider provider = new WallDashProvider();
 
-            var folder = await Package.Current.InstalledLocation.GetFolderAsync("TestData");
-            var file = await folder.GetFileAsync(fileName);
+            StorageFolder folder = await Package.Current.InstalledLocation.GetFolderAsync("TestData");
+            folder = await folder.GetFolderAsync("walldash");
+
+            StorageFile file = await folder.GetFileAsync(fileName);
             string json = await FileIO.ReadTextAsync(file);
 
             // Request: http://walldash.net/backend/main_page/get_images.php?resolution=all&sort_by=r&also_find=l&color=+&show_nsfw=false&show_sketchy=false&show_sfw=true&tags=&username=&password=&session_id=7991034147-213.157.236.119&imgs_to_show=16&imgs_shown=0&_=1432239046438
