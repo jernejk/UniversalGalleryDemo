@@ -111,6 +111,7 @@
   <ItemGroup>
     <Compile Include="Models\WallDashPictureModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\FourWalledProvider.cs" />
     <Compile Include="Providers\IImageProvider.cs" />
     <Compile Include="Providers\WallDashProvider.cs" />
     <Compile Include="Server\HttpGalleryController.cs" />

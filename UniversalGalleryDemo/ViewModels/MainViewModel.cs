@@ -85,7 +85,7 @@ namespace UniversalGalleryDemo.ViewModels
             Images.Clear();
 
             cacheFolder = ApplicationData.Current.LocalCacheFolder;
-            imageProvider = new WallDashProvider();
+            imageProvider = new FourWalledProvider();
 
             // Get first batch of images
             await LoadMoreAsync();
@@ -113,6 +113,7 @@ namespace UniversalGalleryDemo.ViewModels
         private async void CycleImagesAsync()
         {
             StorageFolder picturesFolders = await cacheFolder.CreateFolderAsync("pictures", CreationCollisionOption.OpenIfExists);
+            picturesFolders = await picturesFolders.CreateFolderAsync(imageProvider.Id, CreationCollisionOption.OpenIfExists);
 
             int maxDelay = 0;
             while (true)
@@ -128,10 +129,17 @@ namespace UniversalGalleryDemo.ViewModels
                 string img = Images[CurrentIndex];
 
                 Stopwatch stopwatch = Stopwatch.StartNew();
-                
+
                 // Download and cache image. We should avoid downloading same images multiple times.
-                StorageFile file = await DownloadAndSaveImage(img, picturesFolders);
-                CurrentImageUrl = file.Path;
+                try
+                {
+                    StorageFile file = await DownloadAndSaveImage(img, picturesFolders);
+                    CurrentImageUrl = file.Path;
+                }
+                catch
+                {
+                    // TODO: Notify user?
+                }
 
                 if (CurrentIndex + 1 == Images.Count)
                 {
@@ -175,6 +183,8 @@ namespace UniversalGalleryDemo.ViewModels
                 HttpResponseMessage response = await client.GetAsync(new Uri(url));
                 IBuffer buffer = await response.Content.ReadAsBufferAsync();
 
+                response.EnsureSuccessStatusCode();
+                
                 pictureFile = await folder.CreateFileAsync(fileName, CreationCollisionOption.ReplaceExisting);
                 await FileIO.WriteBufferAsync(pictureFile, buffer);
             }

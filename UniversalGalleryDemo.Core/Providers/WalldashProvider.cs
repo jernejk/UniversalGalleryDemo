@@ -12,6 +12,8 @@ namespace UniversalGalleryDemo.Core.Providers
 {
     public class WallDashProvider : IImageProvider
     {
+        public string Id { get; } = "walldash";
+
         public async Task<List<string>> GetImages(string query, string sort, int startFrom, string additional)
         {
             if (string.IsNullOrWhiteSpace(additional))
