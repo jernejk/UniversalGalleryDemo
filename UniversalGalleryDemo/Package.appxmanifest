@@ -15,7 +15,7 @@
 
   <Properties>
     <DisplayName>UniversalGalleryDemo</DisplayName>
-    <PublisherDisplayName>jerne</PublisherDisplayName>
+    <PublisherDisplayName>jernejk</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -44,5 +44,7 @@
 
   <Capabilities>
     <Capability Name="internetClient" />
+    <Capability Name="privateNetworkClientServer" />
+    <Capability Name="internetClientServer" />
   </Capabilities>
 </Package>

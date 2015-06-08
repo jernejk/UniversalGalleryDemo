@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using UniversalGalleryDemo.Core.Providers;
+using UniversalGalleryDemo.Core.Server;
 using Windows.Storage;
 using Windows.Storage.Streams;
 using Windows.Web.Http;
@@ -17,12 +18,16 @@ namespace UniversalGalleryDemo.ViewModels
         private StorageFolder cacheFolder;
         private string currentImageUrl;
         private int currentIndex;
+        private HttpGalleryController httpController;
+
+        private bool refresh;
 
         public MainViewModel()
         {
             Images = new List<string>();
             Query = string.Empty;
             Sort = "random";
+            Additional = string.Empty;
             DelayUntilNextImageInMiliSeconds = 15000;
 
             if (IsInDesignMode)
@@ -33,8 +38,26 @@ namespace UniversalGalleryDemo.ViewModels
             }
             else
             {
+                httpController = new HttpGalleryController();
+                httpController.GalleryRequest += HttpController_GalleryRequest;
+                httpController.StartServer(8000);
+
                 LoadAsync();
             }
+        }
+
+        private void HttpController_GalleryRequest(object sender, HttpGalleryRequest e)
+        {
+            Query = e.Query ?? string.Empty;
+            Sort = e.Sort ?? "random";
+            Additional = e.Additional;
+
+            if (e.DelayInMilliseconds > 0)
+            {
+                DelayUntilNextImageInMiliSeconds = e.DelayInMilliseconds;
+            }
+
+            refresh = true;
         }
 
         public string CurrentImageUrl
@@ -53,10 +76,14 @@ namespace UniversalGalleryDemo.ViewModels
 
         public string Query { get; set; }
         public string Sort { get; set; }
+        public string Additional { get; set; }
         public List<string> Images { get; set; }
 
         private async void LoadAsync()
         {
+            CurrentIndex = 0;
+            Images.Clear();
+
             cacheFolder = ApplicationData.Current.LocalCacheFolder;
             imageProvider = new WallDashProvider();
 
@@ -71,7 +98,7 @@ namespace UniversalGalleryDemo.ViewModels
         {
             try
             {
-                List<string> images = await imageProvider.GetImages(Query, Sort, startIndex, string.Empty);
+                List<string> images = await imageProvider.GetImages(Query, Sort, startIndex, Additional);
                 Images.AddRange(images);
             }
             catch (Exception exception)
@@ -90,6 +117,14 @@ namespace UniversalGalleryDemo.ViewModels
             int maxDelay = 0;
             while (true)
             {
+                if (refresh)
+                {
+                    refresh = false;
+                    LoadAsync();
+
+                    return;
+                }
+
                 string img = Images[CurrentIndex];
 
                 Stopwatch stopwatch = Stopwatch.StartNew();
