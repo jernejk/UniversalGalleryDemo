@@ -60,7 +60,7 @@ namespace UniversalGalleryDemo.ViewModels
         private async void LoadAsync()
         {
             cacheFolder = ApplicationData.Current.LocalCacheFolder;
-            imageProvider = new FourWalledProvider();
+            imageProvider = new WallDashProvider();
 
             // Get first batch of images
             await LoadMoreAsync();
