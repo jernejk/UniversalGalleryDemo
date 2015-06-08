@@ -138,7 +138,20 @@ namespace UniversalGalleryDemo.ViewModels
                 }
                 catch
                 {
-                    // TODO: Notify user?
+                    try
+                    {
+                        if (img.EndsWith("jpg"))
+                        {
+                            StorageFile file = await DownloadAndSaveImage(img.Replace(".jpg", ".png"), picturesFolders);
+
+                            Debug.WriteLine("PNG temp hack");
+                            CurrentImageUrl = file.Path;
+                        }
+                    }
+                    catch
+                    {
+                        // TODO: Notify user?
+                    }
                 }
 
                 if (CurrentIndex + 1 == Images.Count)
