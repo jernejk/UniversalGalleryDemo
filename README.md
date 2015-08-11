@@ -1,4 +1,7 @@
 # UniversalGalleryDemo
+
+[![Build status](https://ci.appveyor.com/api/projects/status/6x7q45xsi2q8xi8t/branch/master?svg=true)](https://ci.appveyor.com/project/jernejk/universalgallerydemo/branch/master) (Unit test are probably not executed)
+
 This is a demo app for very simple gallery slide show which will work on Windows 10 devices including IoT and Xbox One.
 You can use this app as a digital frame or advertisement or similar.
 
