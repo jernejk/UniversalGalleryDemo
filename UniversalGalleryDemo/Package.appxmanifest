@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="14395JernejKavka.UniversalGallery" Publisher="CN=9CEC5DC5-A356-4CA8-A31F-87551EBE3D9B" Version="1.1.0.0" />
+  <Identity Name="14395JernejKavka.UniversalGallery" Publisher="CN=jernejk" Version="1.1.0.0" />
   <mp:PhoneIdentity PhoneProductId="e8647fd7-8865-4f03-953e-c9aa58f2243b" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Universal Gallery</DisplayName>
-    <PublisherDisplayName>Zenicy</PublisherDisplayName>
+    <PublisherDisplayName>Jernejk</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
