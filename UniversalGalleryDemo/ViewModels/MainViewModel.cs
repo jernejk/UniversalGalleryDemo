@@ -133,9 +133,9 @@ namespace UniversalGalleryDemo.ViewModels
         {
             // TODO: This may not work for all type of providers.
             string fileName;
-            if (url.EndsWith(".jpg") || url.EndsWith(".png"))
+            if (url.EndsWith(".jpg", StringComparison.Ordinal) || url.EndsWith(".png", StringComparison.Ordinal))
             {
-                int i = url.LastIndexOf("/");
+                int i = url.LastIndexOf("/", StringComparison.Ordinal);
                 fileName = url.Substring(i + 1);
             }
             else
