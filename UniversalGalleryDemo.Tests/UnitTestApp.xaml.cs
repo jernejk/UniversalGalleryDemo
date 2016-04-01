@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
-using UniversalGalleryDemo.Views;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
@@ -16,7 +15,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace UniversalGalleryDemo
+namespace UniversalGalleryDemo.Tests
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
@@ -29,7 +28,6 @@ namespace UniversalGalleryDemo
         /// </summary>
         public App()
         {
-            Microsoft.ApplicationInsights.WindowsAppInitializer.InitializeAsync();
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }
@@ -45,7 +43,7 @@ namespace UniversalGalleryDemo
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
             {
-                //this.DebugSettings.EnableFrameRateCounter = true;
+                this.DebugSettings.EnableFrameRateCounter = true;
             }
 #endif
 
@@ -68,16 +66,13 @@ namespace UniversalGalleryDemo
                 // Place the frame in the current Window
                 Window.Current.Content = rootFrame;
             }
+            
+            Microsoft.VisualStudio.TestPlatform.TestExecutor.UnitTestClient.CreateDefaultUI();
 
-            if (rootFrame.Content == null)
-            {
-                // When the navigation stack isn't restored navigate to the first page,
-                // configuring the new page by passing required information as a navigation
-                // parameter
-                rootFrame.Navigate(typeof(MainView), e.Arguments);
-            }
             // Ensure the current window is active
             Window.Current.Activate();
+
+            Microsoft.VisualStudio.TestPlatform.TestExecutor.UnitTestClient.Run(e.Arguments);
         }
 
         /// <summary>

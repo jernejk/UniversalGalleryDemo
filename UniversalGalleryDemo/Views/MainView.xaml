@@ -13,7 +13,7 @@
         <viewModels:MainViewModel />
     </Page.DataContext>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Dark">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <!-- This support switching from old image to new image when new image is completely loaded -->
         <controls:SwitchImage CurrentImage="{Binding CurrentImageUrl}" />
         
